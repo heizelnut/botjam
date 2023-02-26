@@ -1,0 +1,26 @@
+botjam
+======
+
+fail2ban subset for OpenBSD.
+
+inspired by http://www.vincentdelft.be/post/post_20161106 and
+tooling stolen from https://framagit.org/prx/vilain
+
+written from scratch in python.
+
+
+usage
+-----
+
+in pf.conf, add according to your configuration:
+
+	table <botjam> persist
+	block quick from <botjam> 
+
+you can easily change the table name in the python script.
+
+thanks
+------
+
+Vince Delft: https://www.vincentdelft.be
+prx: https://si3t.ch/about/

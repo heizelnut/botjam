@@ -1,0 +1,1 @@
+@hourly /sbin/pfctl -t botjam -T expire 86400

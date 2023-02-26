@@ -1,0 +1,14 @@
+#!/bin/ksh
+#
+# $OpenBSD: botjam.rc,v 1.0 2023/02/26 18:28:00 ecl$
+
+daemon="/usr/local/bin/botjam"
+
+. /etc/rc.d/rc.subr
+
+pexp=".*botjam\.py"
+rc_reload=NO
+
+rc_cmd $1
+
+
